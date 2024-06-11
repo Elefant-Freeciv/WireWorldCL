@@ -65,9 +65,7 @@ class Input_Box:
                 self.selected_charactor += 1
                 if self.selected_charactor > len(self.data)-1:
                     self.data.append(" ")
-#             if self.data_type == "int" or self.data_type == "float":
-#                 self.data = self.data.remove(" ")
-#                 
+                    
         
     def blitme(self, surface):
         pygame.draw.rect(surface, (255,255,255), self.rect)
