@@ -13,15 +13,12 @@ class Button:
         if not draw[0]:
             self.rect = self.img.get_rect(x=x, y=y)
         else:
-            self.rect = pygame.Rect(x, y, draw[1], draw[2])#self.img.get_rect
+            self.rect = pygame.Rect(x, y, draw[1], draw[2])
         #print(self.rect)
         self.text_width, self.text_height = self.font.size(text)
         self.draw = draw
         
     def check_pushed(self):
-        #self.events = pygame.events.get()
-#            if event.type == pygame.MOUSEBUTTONDOWN:
-        #if pygame.mouse.get_pressed()==True:
         mouse_pos = pygame.mouse.get_pos()
         if self.rect.collidepoint(mouse_pos):
             if self.data != None:
