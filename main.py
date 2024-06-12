@@ -17,7 +17,6 @@
 
 import pyopencl as cl
 import numpy
-import sys
 
 import pygame
 from PIL import Image
