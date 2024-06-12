@@ -1,5 +1,6 @@
 import pyopencl as cl
 import numpy
+import sys
 
 import pygame
 from PIL import Image
@@ -7,9 +8,9 @@ from button import Button
 from input_box import Input_Box
 
 class simulator:
-    def __init__(self, screen_exp):
+    def __init__(self, screen_mul):
         pygame.init()
-        self.screen_mul = 2 ** screen_exp
+        self.screen_mul = screen_mul
         self.clock = pygame.time.Clock()
         self.ctx = cl.create_some_context()
         self.queue = cl.CommandQueue(self.ctx)
@@ -209,5 +210,6 @@ class simulator:
             self.clock.tick(10)
         pygame.quit()
         
-sim = simulator(2)
+mul = int(input("Please input window size multiplier (256 * X). Must be int:"))
+sim = simulator(mul)
 sim.run()

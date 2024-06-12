@@ -35,5 +35,5 @@ class Button:
             self.window.blit(self.img, self.loc)
         else:
             pygame.draw.rect(self.window, (0,0,0), (self.loc[0],self.loc[1],self.draw[1],self.draw[2]))
-            pygame.draw.rect(self.window, (38,47,145), (self.loc[0]+5,self.loc[1]+5,self.draw[1]-10,self.draw[2]-10))
+            pygame.draw.rect(self.window, (38,47,145), (self.loc[0]+2,self.loc[1]+2,self.draw[1]-4,self.draw[2]-4))
         self.window.blit(self.text, (self.loc[0]+(self.rect.width/2)-(self.text_width/2), self.loc[1]+(self.rect.height/2)-(self.text_height/2)))
