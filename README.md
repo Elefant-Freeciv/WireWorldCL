@@ -10,3 +10,5 @@ To use, run ```pip install -r requirements.txt```, and then run ```python WireWo
 Alternatively, for Windows users, an exe is provided in the releases section of this repo.
 
 This program uses OpenCL GPU acceleration to run the simulation. Consequently, you will need OpenCL on your machine. Check with your hardware manufacturer for drivers.
+
+![Screenshot of sim running.](Capture.PNG)
