@@ -226,6 +226,6 @@ class simulator:
             self.clock.tick(10)
         pygame.quit()
         
-mul = int(input("Please input window size multiplier (256 * X). Must be int:"))
+mul = int(input("Please input window size multiplier (256 pixels * X). Must be int:"))
 sim = simulator(mul)
 sim.run()
